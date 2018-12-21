@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+    # 1c emulator
+    1cemulator:
+        container_name: 1cemulator
+        build: lehaboroda/one-c-emulator
+        volumes:
+          - /home/ubuntu/docker/data:/opt/one-c-emulator
+        ports:
+          - 80:5000
